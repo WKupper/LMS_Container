@@ -22,7 +22,7 @@ $CFG->wwwroot   = '{SITE_URL}';
 $CFG->dataroot  = '{SITE_MOODLEDATA}';
 $CFG->admin     = 'admin';
 
-$CFG->directorypermissions = 0777;
+$CFG->directorypermissions = 0770;
 
 #Best practices CR-014
 $CFG->preventexecpath = true;
@@ -31,26 +31,26 @@ $CFG->pathtogs = '/usr/bin/gs';
 $CFG->aspellpath = '/usr/bin/aspell';
 $CFG->pathtopython = '/usr/bin/python';
 
-$CFG->passwordpolicy = {PASSWORD_POLICY}
-$CFG->minpasswordlength = {PASSWORD_LENGTH}
-$CFG->minpassworddigits = {MIN_DIGITS}
-$CFG->minpasswordlower = {MIN_LOWERCASE}
-$CFG->minpasswordupper = {MIN_UPPERCASE}
-$CFG->minpasswordnonalphanum = {MIN_NONALPHA}
-$CFG->maxconsecutiveidentchars = {MAX_CONSECUTIVE}
-$CFG->passwordreuselimit = {MIN_ROTAIONREUSE}
-$CFG->passwordchangelogout = {PASSWORD_FORCELOGOUT}
+$CFG->passwordpolicy = {PASSWORD_POLICY};
+$CFG->minpasswordlength = {PASSWORD_LENGTH};
+$CFG->minpassworddigits = {MIN_DIGITS};
+$CFG->minpasswordlower = {MIN_LOWERCASE};
+$CFG->minpasswordupper = {MIN_UPPERCASE};
+$CFG->minpasswordnonalphanum = {MIN_NONALPHA};
+$CFG->maxconsecutiveidentchars = {MAX_CONSECUTIVE};
+$CFG->passwordreuselimit = {MIN_ROTAIONREUSE};
+$CFG->passwordchangelogout = {PASSWORD_FORCELOGOUT};
 
-$CFG->lockoutthreshold = {LOCKOUT_THRESHOLD}
-$CFG->lockoutwindow = {LOCKOUT_WINDOW}
-$CFG->lockoutduration = {LOCKOUT_DURATION}
+$CFG->lockoutthreshold = {LOCKOUT_THRESHOLD};
+$CFG->lockoutwindow = {LOCKOUT_WINDOW};
+$CFG->lockoutduration = {LOCKOUT_DURATION};
 
-$CFG->cronclionly = {CRON_CLIONLY}
+$CFG->cronclionly = {CRON_CLIONLY};
 
-$CFG->guestloginbutton = {GUESTLOGINBUTTON}
+$CFG->guestloginbutton = {GUESTLOGINBUTTON};
 
-$CFG->cookiesecure = {SECURE_COOKIES}
-$CFG->cookiehttponly = {HTTP_ONLY_COOKIES}
+$CFG->cookiesecure = {SECURE_COOKIES};
+$CFG->cookiehttponly = {HTTP_ONLY_COOKIES};
 
 $CFG->passwordsaltmain = 'loi0Dlcyo2riKMh3MVQ)Pe?]d';
 
