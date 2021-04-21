@@ -6,10 +6,10 @@ $CFG = new stdClass();
 
 $CFG->dbtype    = 'pgsql';
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = '{$DB_HOSTIP}';
-$CFG->dbname    = '{$DB_NAME}';
-$CFG->dbuser    = '{$DB_USER}';
-$CFG->dbpass    = '{$DB_PASS}';
+$CFG->dbhost    = '{DB_HOSTIP}';
+$CFG->dbname    = '{DB_NAME}';
+$CFG->dbuser    = '{DB_USER}';
+$CFG->dbpass    = '{DB_PASS}';
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
@@ -18,8 +18,8 @@ $CFG->dboptions = array (
   'dbcollation' => 'utf8_unicode_ci',
 );
 
-$CFG->wwwroot   = '{$SITE_URL}';
-$CFG->dataroot  = '{$SITE_MOODLEDATA}';
+$CFG->wwwroot   = '{SITE_URL}';
+$CFG->dataroot  = '{SITE_MOODLEDATA}';
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
@@ -30,7 +30,27 @@ $CFG->pathtodu = '/usr/bin/du';
 $CFG->pathtogs = '/usr/bin/gs';
 $CFG->aspellpath = '/usr/bin/aspell';
 $CFG->pathtopython = '/usr/bin/python';
-$CFG->forced_plugin_settings = array('antivirus_clamav' => array('pathtoclam' => '/usr/bin/clamscan'));
+
+$CFG->passwordpolicy = {PASSWORD_POLICY}
+$CFG->minpasswordlength = {PASSWORD_LENGTH}
+$CFG->minpassworddigits = {MIN_DIGITS}
+$CFG->minpasswordlower = {MIN_LOWERCASE}
+$CFG->minpasswordupper = {MIN_UPPERCASE}
+$CFG->minpasswordnonalphanum = {MIN_NONALPHA}
+$CFG->maxconsecutiveidentchars = {MAX_CONSECUTIVE}
+$CFG->passwordreuselimit = {MIN_ROTAIONREUSE}
+$CFG->passwordchangelogout = {PASSWORD_FORCELOGOUT}
+
+$CFG->lockoutthreshold = {LOCKOUT_THRESHOLD}
+$CFG->lockoutwindow = {LOCKOUT_WINDOW}
+$CFG->lockoutduration = {LOCKOUT_DURATION}
+
+$CFG->cronclionly = {CRON_CLIONLY}
+
+$CFG->guestloginbutton = {GUESTLOGINBUTTON}
+
+$CFG->cookiesecure = {SECURE_COOKIES}
+$CFG->cookiehttponly = {HTTP_ONLY_COOKIES}
 
 $CFG->passwordsaltmain = 'loi0Dlcyo2riKMh3MVQ)Pe?]d';
 
